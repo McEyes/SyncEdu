@@ -126,3 +126,13 @@ export const achievementApi = {
   getChildAchievements: (childId: number) =>
     request({ url: `/achievement/child/${childId}` })
 }
+
+// 通知（WebSocket）
+export const notificationApi = {
+  getStatus: () =>
+    request({ url: '/notification/status' }),
+  sendTest: (data: { type?: string; title?: string; content?: string }) =>
+    request({ url: '/notification/test', method: 'POST', data }),
+  broadcast: (data: { type?: string; title?: string; content?: string }) =>
+    request({ url: '/notification/broadcast', method: 'POST', data })
+}

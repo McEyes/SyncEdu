@@ -15,3 +15,4 @@ C:\liyh\work\SyncEdu\src\SyncEdu.Core\obj\Debug\net8.0\SyncEdu.Core.dll
 C:\liyh\work\SyncEdu\src\SyncEdu.Core\obj\Debug\net8.0\refint\SyncEdu.Core.dll
 C:\liyh\work\SyncEdu\src\SyncEdu.Core\obj\Debug\net8.0\SyncEdu.Core.pdb
 C:\liyh\work\SyncEdu\src\SyncEdu.Core\obj\Debug\net8.0\ref\SyncEdu.Core.dll
+C:\liyh\work\SyncEdu\src\SyncEdu.Core\obj\Debug\net8.0\SyncEdu.Core.sourcelink.json

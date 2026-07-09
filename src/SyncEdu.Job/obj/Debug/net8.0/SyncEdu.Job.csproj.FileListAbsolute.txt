@@ -137,3 +137,4 @@ C:\liyh\work\SyncEdu\src\SyncEdu.Job\obj\Debug\net8.0\refint\SyncEdu.Job.dll
 C:\liyh\work\SyncEdu\src\SyncEdu.Job\obj\Debug\net8.0\SyncEdu.Job.pdb
 C:\liyh\work\SyncEdu\src\SyncEdu.Job\obj\Debug\net8.0\SyncEdu.Job.genruntimeconfig.cache
 C:\liyh\work\SyncEdu\src\SyncEdu.Job\obj\Debug\net8.0\ref\SyncEdu.Job.dll
+C:\liyh\work\SyncEdu\src\SyncEdu.Job\obj\Debug\net8.0\SyncEdu.Job.sourcelink.json

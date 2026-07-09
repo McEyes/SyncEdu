@@ -13,3 +13,4 @@ C:\liyh\work\SyncEdu\src\SyncEdu.Infrastructure\obj\Debug\net8.0\SyncEdu.Infrast
 C:\liyh\work\SyncEdu\src\SyncEdu.Infrastructure\obj\Debug\net8.0\refint\SyncEdu.Infrastructure.dll
 C:\liyh\work\SyncEdu\src\SyncEdu.Infrastructure\obj\Debug\net8.0\SyncEdu.Infrastructure.pdb
 C:\liyh\work\SyncEdu\src\SyncEdu.Infrastructure\obj\Debug\net8.0\ref\SyncEdu.Infrastructure.dll
+C:\liyh\work\SyncEdu\src\SyncEdu.Infrastructure\obj\Debug\net8.0\SyncEdu.Infrastructure.sourcelink.json

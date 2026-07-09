@@ -55,8 +55,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { childApi } from '../../api'
+import { connectWebSocket, disconnectWebSocket } from '../../utils/websocket'
 
 const nickName = ref(uni.getStorageSync('nickName') || '')
 const children = ref<any[]>([])
@@ -71,6 +72,12 @@ onMounted(() => {
     return
   }
   loadChildren()
+  // 连接 WebSocket
+  connectWebSocket()
+})
+
+onUnmounted(() => {
+  disconnectWebSocket()
 })
 
 async function loadChildren() {

@@ -146,3 +146,4 @@ C:\liyh\work\SyncEdu\src\SyncEdu.Api\obj\Debug\net8.0\refint\SyncEdu.Api.dll
 C:\liyh\work\SyncEdu\src\SyncEdu.Api\obj\Debug\net8.0\SyncEdu.Api.pdb
 C:\liyh\work\SyncEdu\src\SyncEdu.Api\obj\Debug\net8.0\SyncEdu.Api.genruntimeconfig.cache
 C:\liyh\work\SyncEdu\src\SyncEdu.Api\obj\Debug\net8.0\ref\SyncEdu.Api.dll
+C:\liyh\work\SyncEdu\src\SyncEdu.Api\obj\Debug\net8.0\SyncEdu.Api.sourcelink.json

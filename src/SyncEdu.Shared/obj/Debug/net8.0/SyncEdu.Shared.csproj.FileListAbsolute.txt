@@ -10,3 +10,4 @@ C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.dll
 C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\refint\SyncEdu.Shared.dll
 C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.pdb
 C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\ref\SyncEdu.Shared.dll
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.sourcelink.json

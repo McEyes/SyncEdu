@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using SyncEdu.Core.Interfaces;
+using SyncEdu.Core.Notifications;
 using SyncEdu.Core.Services;
 using SyncEdu.Infrastructure.Extensions;
 
@@ -41,6 +42,23 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidAudience = jwtConfig["Audience"] ?? "SyncEdu",
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
         };
+
+        // WebSocket 连接从 query string 获取 token
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                if (context.HttpContext.WebSockets.IsWebSocketRequest)
+                {
+                    var token = context.Request.Query["access_token"].FirstOrDefault();
+                    if (!string.IsNullOrEmpty(token))
+                    {
+                        context.Token = token;
+                    }
+                }
+                return Task.CompletedTask;
+            }
+        };
     });
 
 builder.Services.AddAuthorization();
@@ -59,9 +77,12 @@ builder.Services.AddScoped<IReminderService, ReminderService>();
 builder.Services.AddScoped<IAchievementService, AchievementService>();
 builder.Services.AddScoped<IEducationSyncService, EducationSyncService>();
 
-// 教育数据提供者（预留）
+// 教育数据提供者
 builder.Services.AddScoped<IEducationDataProvider, SmartEducationPlatformProvider>();
 builder.Services.AddScoped<IEducationDataProvider, LocalEducationBureauProvider>();
+
+// 通知服务（WebSocket）
+builder.Services.AddSingleton<INotificationService, NotificationService>();
 
 // ===== Controllers & Swagger =====
 builder.Services.AddControllers()
@@ -120,6 +141,12 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // ===== 中间件管道 =====
+// WebSocket 支持
+app.UseWebSockets(new WebSocketOptions
+{
+    KeepAliveInterval = TimeSpan.FromSeconds(30)
+});
+
 // Swagger 始终可用
 app.UseSwagger();
 app.UseSwaggerUI(c =>

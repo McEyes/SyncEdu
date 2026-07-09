@@ -123,3 +123,13 @@ export const educationSyncApi = {
   getRecommendations: (childId: number) =>
     request.get(`/educationSync/recommendations/${childId}`)
 }
+
+// ==================== 通知（WebSocket） ====================
+export const notificationApi = {
+  getStatus: () =>
+    request.get('/notification/status'),
+  sendTest: (data: { type?: string; title?: string; content?: string }) =>
+    request.post('/notification/test', data),
+  broadcast: (data: { type?: string; title?: string; content?: string }) =>
+    request.post('/notification/broadcast', data)
+}

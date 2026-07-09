@@ -84,6 +84,7 @@
           </span>
         </div>
         <div class="header-right">
+          <NotificationPanel />
           <span class="user-name">{{ userStore.nickName }}</span>
           <el-dropdown @command="handleCommand">
             <el-avatar :size="32">
@@ -107,19 +108,28 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { HomeFilled, User, House, Reading, Notebook, Calendar, Bell, Trophy, Refresh } from '@element-plus/icons-vue'
 import { useUserStore } from '../stores/user'
 import { useChildStore } from '../stores/child'
+import { useWebSocket } from '../composables/useWebSocket'
+import NotificationPanel from '../components/NotificationPanel.vue'
 
 const route = useRoute()
 const router = useRouter()
 const userStore = useUserStore()
 const childStore = useChildStore()
+const { connect, disconnect } = useWebSocket()
 
 onMounted(async () => {
   await childStore.loadChildren()
+  // 登录后自动连接 WebSocket
+  connect()
+})
+
+onUnmounted(() => {
+  disconnect()
 })
 
 function handleCommand(command: string) {
