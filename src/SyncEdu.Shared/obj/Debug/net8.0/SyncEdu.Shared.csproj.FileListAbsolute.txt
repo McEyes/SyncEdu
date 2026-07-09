@@ -1,0 +1,12 @@
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.AssemblyInfoInputs.cache
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.AssemblyInfo.cs
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.csproj.CoreCompileInputs.cache
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\bin\Debug\net8.0\SyncEdu.Shared.deps.json
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\bin\Debug\net8.0\SyncEdu.Shared.dll
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\bin\Debug\net8.0\SyncEdu.Shared.pdb
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.csproj.AssemblyReference.cache
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.dll
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\refint\SyncEdu.Shared.dll
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\SyncEdu.Shared.pdb
+C:\liyh\work\SyncEdu\src\SyncEdu.Shared\obj\Debug\net8.0\ref\SyncEdu.Shared.dll

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-SyncEdu.Job-b9542bff-efd8-4b2d-8a34-929d915eeae3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SyncEdu.Core\SyncEdu.Core.csproj" />
+    <ProjectReference Include="..\SyncEdu.Infrastructure\SyncEdu.Infrastructure.csproj" />
+    <ProjectReference Include="..\SyncEdu.Shared\SyncEdu.Shared.csproj" />
+  </ItemGroup>
+</Project>
